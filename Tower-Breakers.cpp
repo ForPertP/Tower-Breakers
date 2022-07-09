@@ -15,8 +15,16 @@ vector<string> split(const string &);
  *  2. INTEGER m
  */
 
-int towerBreakers(int n, int m) {
+int towerBreakers(int n, int m)
+{
+    int result = 2;
+    
+    if (m > 1)
+    {
+        result -= n % 2;
+    }
 
+    return result;
 }
 
 int main()
