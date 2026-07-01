@@ -17,14 +17,7 @@ vector<string> split(const string &);
 
 int towerBreakers(int n, int m)
 {
-    int result = 2;
-    
-    if (m > 1)
-    {
-        result -= n % 2;
-    }
-
-    return result;
+    return (m == 1 || n % 2 == 0) ? 2 : 1;
 }
 
 int main()
