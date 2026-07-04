@@ -9,6 +9,9 @@
 --  2. INTEGER m
 --
 
+function towerBreakers(n, m)
+    return (m == 1 or n % 2 == 0) and 2 or 1
+end
 
 local fptr = io.open(os.getenv("OUTPUT_PATH"), "w")
 
